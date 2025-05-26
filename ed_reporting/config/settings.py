@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DEBUG", cast=bool)
+DEBUG = config("DEBUG", default=False, cast=bool)
 
 ALLOWED_HOSTS = [
     config("ALLOWED_HOSTS", default="127.0.0.1"),
@@ -60,7 +60,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            path.join(BASE_DIR, "tempaltes"),
+            path.join(BASE_DIR, "templates"),
         ],
         'APP_DIRS': True,
         'OPTIONS': {

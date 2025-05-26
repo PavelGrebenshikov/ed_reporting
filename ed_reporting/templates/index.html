@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}">
+    <title>Главная страница</title>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать на главную страницу</h1>
+</header>
+
+<nav>
+    <a href="#home">Главная</a>
+    <a href="#edhome">EDhome</a>
+    <a href="#about">О сайте</a>
+    <a href="#report">Выгрузка отчёта</a>
+</nav>
+
+<div class="container">
+    <section id="home">
+        <h2>Главная</h2>
+        <p>Это главная страница вашего сайта.</p>
+    </section>
+
+    <section id="edhome">
+        <h2>EDhome</h2>
+        <p>Информация о EDhome.</p>
+    </section>
+
+    <section id="about">
+        <h2>О сайте</h2>
+        <p>Здесь будет информация о вашем сайте.</p>
+    </section>
+
+    <section id="report">
+        <h2>Выгрузка отчёта</h2>
+        <p>Здесь вы сможете выгружать отчёты.</p>
+    </section>
+</div>
+<footer>
+    <p>&copy; 2023 Ваш сайт. Все права защищены.</p>
+</footer>
+</body>
+</html>
